@@ -23,7 +23,12 @@ public class MainActivity extends AppCompatActivity {
                     }
                 });
 
-        new AAsyncTask().execute();
+        findViewById(R.id.button_start_ansyctask).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                new AAsyncTask().execute();
+            }
+        });
     }
 
     private void startSecondActivity() {
